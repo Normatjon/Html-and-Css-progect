@@ -157,7 +157,7 @@ font-family: var(--playfair);
 }
 .disign-img{
     position: relative;
-    height: 78vh;
+    height: 70vh;
     overflow: hidden;
 }
 .disign-img::after{
@@ -312,4 +312,38 @@ footer span{
     margin-top:  1rem;
     display: block;
     font-family: (var(--playfair));
+}
+.navbar-nav i{
+    display: none;
+}
+
+@media only screen and (max-width: 800px){
+    .navbar-nav a{
+        display: none;
+    }
+    .navbar-nav i{
+        display: block;
+    }
+    .banner-title{
+        font-size: 3.5rem;
+        padding-bottom: 1.5rem;
+    }
+.disign-content {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+.blog-content {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.about-content {
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 3rem;
+    align-items: center;
+}
 }
